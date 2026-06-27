@@ -328,3 +328,11 @@ p {
 .website-link:hover {
     text-decoration: underline;
 }
+
+.gantt-container {
+
+    img{
+        border-radius: 1rem;
+        height: 25rem;
+    }
+}
