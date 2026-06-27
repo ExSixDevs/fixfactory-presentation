@@ -1,17 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FixFactory | Presentación Coloquio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Fondo de Pantalla Completa y Overlay -->
     <div class="background"></div>
     <div class="overlay"></div>
@@ -19,290 +23,366 @@
     <div class="glow glow-2"></div>
 
     <div class="slider-container">
+      <!-- 1. Portada -->
+      <div class="slide active">
+        <div class="content-wrapper cover-center">
+          <img
+            src="img/2.jpg"
+            alt="Logo FixFactory"
+            class="logo-img"
+            onerror="this.classList.add('d-none')"
+          />
+          <h1>FixFactory</h1>
+          <p class="subtitle">Sistema de Gestión de Mantenimiento Industrial</p>
+          <div>
+            <p class="group-info">
+              <strong>Grupo 2 | ExSixDevs | Comisión A - 2026</strong>
+            </p>
+            <div class="tags-container">
+              <span class="tag">Branko Haberkon</span>
+              <span class="tag">Camila Lerman</span>
+              <span class="tag">Martín Morondo</span>
+              <span class="tag">Matías Lorenzo</span>
+              <span class="tag">Fernando Clemens</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- 1. Portada -->
-        <div class="slide active">
-            <div class="content-wrapper cover-center">
-                <img src="img/2.jpg" alt="Logo FixFactory" class="logo-img" onerror="this.classList.add('d-none');">
-                <h1>FixFactory</h1>
-                <p class="subtitle">Sistema de Gestión de
-                    Mantenimiento Industrial</p>
+      <!-- 2. Branko Haberkon (Líder / Integración) -->
+      <div class="slide">
+        <div class="content-wrapper">
+          <h2>
+            <i class="fa-solid fa-list-check"></i> Proyecto y Solución (Branko)
+          </h2>
+          <div class="grid-2">
+            <div>
+              <div class="info-box mb-30">
+                <i class="fa-solid fa-triangle-exclamation"></i>
                 <div>
-                    <p class="group-info"><strong>Grupo 2 | ExSixDevs | Comisión A - 2026</strong></p>
-                    <div class="tags-container">
-                        <span class="tag">Branko Haberkon</span>
-                        <span class="tag">Camila Lerman</span>
-                        <span class="tag">Martín Morondo</span>
-                        <span class="tag">Matías Lorenzo</span>
-                        <span class="tag">Fernando Clemens</span>
-                    </div>
+                  <h3>La Problemática</h3>
+                  <p>
+                    Gestión informal basada en Excel y WhatsApp. Tiempos muertos
+                    elevados y falta total de trazabilidad en las PyMEs.
+                  </p>
                 </div>
-            </div>
-        </div>
-
-        <!-- 2. Branko Haberkon (Líder / Integración) -->
-        <div class="slide">
-            <div class="content-wrapper">
-                <h2><i class="fa-solid fa-list-check"></i> Proyecto y Solución (Branko)</h2>
-                <div class="grid-2">
-                    <div>
-                        <div class="info-box mb-30">
-                            <i class="fa-solid fa-triangle-exclamation"></i>
-                            <div>
-                                <h3>La Problemática</h3>
-                                <p>Gestión informal basada en Excel y WhatsApp. Tiempos muertos elevados y falta total
-                                    de trazabilidad en las PyMEs.</p>
-                            </div>
-                        </div>
-                        <div class="info-box">
-                            <i class="fa-solid fa-lightbulb"></i>
-                            <div>
-                                <h3>La Solución SaaS</h3>
-                                <p>Un flujo que conecta Producción, Mantenimiento y Compras en una sola plataforma en la
-                                    nube.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="info-box h-100">
-                            <i class="fa-solid fa-rotate"></i>
-                            <div>
-                                <h3>Metodología y MVP</h3>
-                                <p>Trabajamos con Scrum simplificado para coordinar al equipo. Logramos un MVP funcional
-                                    que integra módulos de incidencias, máquinas y órdenes de trabajo.</p>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="info-box">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                  <h3>La Solución SaaS</h3>
+                  <p>
+                    Un flujo que conecta Producción, Mantenimiento y Compras en
+                    una sola plataforma en la nube.
+                  </p>
                 </div>
+              </div>
             </div>
-        </div>
-
-        <!-- 3. Camila Lerman (UX/UI) -->
-        <div class="slide">
-            <div class="content-wrapper">
-                <h2><i class="fa-solid fa-mobile-screen-button"></i> Experiencia de Usuario (Camila)</h2>
-                <div class="grid-2">
-                    <div>
-                        <p class="section-desc">Diseñamos FixFactory para minimizar la
-                            fricción en el piso de la fábrica, donde los operarios necesitan herramientas rápidas y
-                            directas.</p>
-                        <div class="info-box">
-                            <i class="fa-solid fa-qrcode"></i>
-                            <div>
-                                <h3>Mobile First & Códigos QR</h3>
-                                <p>Escaneo rápido para reportar fallas y adjuntar fotografías directamente desde el
-                                    celular del operario.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="info-box mb-30">
-                            <i class="fa-solid fa-users-gear"></i>
-                            <div>
-                                <h3>Arquitectura por Roles</h3>
-                                <p>Vistas adaptadas para Operario, Técnico, Jefe de Mantenimiento y Gerencia.</p>
-                            </div>
-                        </div>
-                        <div class="info-box">
-                            <i class="fa-solid fa-eye"></i>
-                            <div>
-                                <h3>Carga Cognitiva Reducida</h3>
-                                <p>Interfaces limpias, botones de alto contraste y flujos de acción claros (ej. Reportar
-                                    Falla).</p>
-                            </div>
-                        </div>
-                    </div>
+            <div>
+              <div class="info-box h-100">
+                <i class="fa-solid fa-rotate"></i>
+                <div>
+                  <h3>Metodología y MVP</h3>
+                  <p>
+                    Trabajamos con Scrum simplificado para coordinar al equipo.
+                    Logramos un MVP funcional que integra módulos de
+                    incidencias, máquinas y órdenes de trabajo.
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-        <!-- 4. Martín Morondo (Frontend) -->
-        <div class="slide">
-            <div class="content-wrapper">
-                <h2><i class="fa-brands fa-react"></i> Desarrollo Frontend (Martín)</h2>
-                <div class="grid-2">
-                    <div>
-                        <div class="info-box mb-30">
-                            <i class="fa-solid fa-code"></i>
-                            <div>
-                                <h3>Stack Tecnológico</h3>
-                                <p>Single Page Application (SPA) construida con React 19, TypeScript, y Vite. Estilos
-                                    implementados con Tailwind CSS.</p>
-                            </div>
-                        </div>
-                        <div class="info-box">
-                            <i class="fa-solid fa-chart-pie"></i>
-                            <div>
-                                <h3>Dashboard y Recharts</h3>
-                                <p>Gráficos dinámicos para visualizar KPIs en tiempo real como MTTR, MTBF y Costos
-                                    Acumulados.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="info-box h-100">
-                            <i class="fa-solid fa-network-wired"></i>
-                            <div>
-                                <h3>Conectividad y Estado</h3>
-                                <p>Consumo de API REST mediante Axios con interceptores de seguridad. Gestión del estado
-                                    global y autenticación controlada por Zustand.</p>
-                            </div>
-                        </div>
-                    </div>
+      <!-- 3. Camila Lerman (UX/UI) -->
+      <div class="slide">
+        <div class="content-wrapper">
+          <h2>
+            <i class="fa-solid fa-mobile-screen-button"></i> Experiencia de
+            Usuario (Camila)
+          </h2>
+          <div class="grid-2">
+            <div>
+              <p class="section-desc">
+                Diseñamos FixFactory para minimizar la fricción en el piso de la
+                fábrica, donde los operarios necesitan herramientas rápidas y
+                directas.
+              </p>
+              <div class="info-box">
+                <i class="fa-solid fa-qrcode"></i>
+                <div>
+                  <h3>Mobile First & Códigos QR</h3>
+                  <p>
+                    Escaneo rápido para reportar fallas y adjuntar fotografías
+                    directamente desde el celular del operario.
+                  </p>
                 </div>
+              </div>
             </div>
-        </div>
-
-        <!-- 5. Matías Lorenzo (Backend) -->
-        <div class="slide">
-            <div class="content-wrapper">
-                <h2><i class="fa-brands fa-node-js"></i> Arquitectura Backend (Matías)</h2>
-                <div class="grid-2">
-                    <div>
-                        <p class="section-desc">Diseño basado en principios SOLID y
-                            arquitectura modular estricta separada en capas (Routes, Controllers, Services, Models).</p>
-                        <div class="info-box">
-                            <i class="fa-solid fa-server"></i>
-                            <div>
-                                <h3>API RESTful MERN</h3>
-                                <p>Plataforma construida sobre Node.js y Express, conectada a base de datos NoSQL
-                                    MongoDB mediante Mongoose.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="info-box mb-30">
-                            <i class="fa-solid fa-shield-halved"></i>
-                            <div>
-                                <h3>Seguridad Multi-Tenant</h3>
-                                <p>Aislamiento estricto de datos corporativos. Los Middlewares interceptan y validan el
-                                    <code>companyId</code> en cada token JWT.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info-box">
-                            <i class="fa-solid fa-gears"></i>
-                            <div>
-                                <h3>Máquina de Estados</h3>
-                                <p>Lógica compleja centralizada que gestiona el ciclo de vida de Órdenes de Trabajo,
-                                    asignaciones, notificaciones y mantenimiento preventivo.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div>
+              <div class="info-box mb-30">
+                <i class="fa-solid fa-users-gear"></i>
+                <div>
+                  <h3>Arquitectura por Roles</h3>
+                  <p>
+                    Vistas adaptadas para Operario, Técnico, Jefe de
+                    Mantenimiento y Gerencia.
+                  </p>
                 </div>
-            </div>
-        </div>
-
-        <!-- 6. Fernando Clemens (QA) -->
-        <div class="slide">
-            <div class="content-wrapper">
-                <h2><i class="fa-solid fa-vial-circle-check"></i> Calidad y QA (Fernando)</h2>
-                <div class="grid-2">
-                    <div>
-                        <div class="info-box mb-30">
-                            <i class="fa-solid fa-robot"></i>
-                            <div>
-                                <h3>Pruebas E2E (Playwright)</h3>
-                                <p>Automatización del flujo core: logueo de operario, reporte de incidencia, asignación
-                                    de jefe y cierre técnico.</p>
-                            </div>
-                        </div>
-                        <div class="info-box">
-                            <i class="fa-solid fa-microscope"></i>
-                            <div>
-                                <h3>Pruebas Unitarias (Jest)</h3>
-                                <p>Validación aislada de módulos críticos, como el encriptado en
-                                    <code>PasswordHasher</code> y las reglas de negocio en <code>agenda.service</code>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="info-box h-100">
-                            <i class="fa-solid fa-check-double"></i>
-                            <div>
-                                <h3>Validación de Seguridad</h3>
-                                <p>Pruebas exhaustivas ejecutadas para confirmar que el aislamiento Multi-Tenant
-                                    funciona correctamente y que los privilegios por Rol se respetan sin excepciones.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="info-box">
+                <i class="fa-solid fa-eye"></i>
+                <div>
+                  <h3>Carga Cognitiva Reducida</h3>
+                  <p>
+                    Interfaces limpias, botones de alto contraste y flujos de
+                    acción claros (ej. Reportar Falla).
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-        <!-- 7. Agradecimiento -->
-        <div class="slide">
-            <div class="content-wrapper cover-center">
-                <h1 class="thanks-title">¡Muchas Gracias!</h1>
-                <p class="subtitle mb-30">Visita nuestro sitio web para conocer más</p>
-                <div class="qr-container">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://fixfactory.vercel.app" alt="QR Code Web" class="qr-image">
+      <!-- 4. Martín Morondo (Frontend) -->
+      <div class="slide">
+        <div class="content-wrapper">
+          <h2>
+            <i class="fa-brands fa-react"></i> Desarrollo Frontend (Martín)
+          </h2>
+          <div class="grid-2">
+            <div>
+              <div class="info-box mb-30">
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <h3>Stack Tecnológico</h3>
+                  <p>
+                    Single Page Application (SPA) construida con React 19,
+                    TypeScript, y Vite. Estilos implementados con Tailwind CSS.
+                  </p>
                 </div>
-                <a href="https://fixfactory.vercel.app" target="_blank" class="website-link">fixfactory.vercel.app</a>
+              </div>
+              <div class="info-box">
+                <i class="fa-solid fa-chart-pie"></i>
+                <div>
+                  <h3>Dashboard y Recharts</h3>
+                  <p>
+                    Gráficos dinámicos para visualizar KPIs en tiempo real como
+                    MTTR, MTBF y Costos Acumulados.
+                  </p>
+                </div>
+              </div>
             </div>
+            <div>
+              <div class="info-box h-100">
+                <i class="fa-solid fa-network-wired"></i>
+                <div>
+                  <h3>Conectividad y Estado</h3>
+                  <p>
+                    Consumo de API REST mediante Axios con interceptores de
+                    seguridad. Gestión del estado global y autenticación
+                    controlada por Zustand.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
+      <!-- 5. Matías Lorenzo (Backend) -->
+      <div class="slide">
+        <div class="content-wrapper">
+          <h2>
+            <i class="fa-brands fa-node-js"></i> Arquitectura Backend (Matías)
+          </h2>
+          <div class="grid-2">
+            <div>
+              <div class="info-box mb-30">
+                <i class="fa-solid fa-server"></i>
+                <div>
+                  <h3>API RESTful MERN</h3>
+                  <p>
+                    Núcleo asíncrono construido sobre Node.js y Express, con
+                    persistencia flexible en MongoDB a través de Mongoose.
+                  </p>
+                </div>
+              </div>
+              <div class="info-box">
+                <i class="fa-solid fa-layer-group"></i>
+                <div>
+                  <h3>Arquitectura Modular en Capas</h3>
+                  <p>
+                    Desacoplamiento estricto de responsabilidades:
+                    <strong>Routes</strong>, <strong>Controllers</strong>,
+                    <strong>Services</strong> (lógica pura) y
+                    <strong>Models</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="info-box mb-30">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                  <h3>Seguridad Multi-Tenant</h3>
+                  <p>
+                    Aislamiento estricto de datos corporativos. Los Middlewares
+                    interceptan y validan el <code>companyId</code> en cada
+                    token JWT.
+                  </p>
+                </div>
+              </div>
+              <div class="info-box">
+                <i class="fa-solid fa-chart-line"></i>
+                <div>
+                  <h3>Motor Analítico y Notificaciones</h3>
+                  <p>
+                    Agregaciones avanzadas en MongoDB para el cálculo de KPIs
+                    (MTTR, Costos) y mensajería asíncrona mediante WebSockets y
+                    Nodemailer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Fernando Clemens (QA) -->
+      <div class="slide">
+        <div class="content-wrapper">
+          <h2>
+            <i class="fa-solid fa-vial-circle-check"></i> Calidad y QA
+            (Fernando)
+          </h2>
+          <div class="grid-2">
+            <div>
+              <div class="info-box mb-30">
+                <i class="fa-solid fa-robot"></i>
+                <div>
+                  <h3>Pruebas E2E (Playwright)</h3>
+                  <p>
+                    Automatización del flujo core: logueo de operario, reporte
+                    de incidencia, asignación de jefe y cierre técnico.
+                  </p>
+                </div>
+              </div>
+              <div class="info-box">
+                <i class="fa-solid fa-microscope"></i>
+                <div>
+                  <h3>Pruebas Unitarias (Jest)</h3>
+                  <p>
+                    Validación aislada de módulos críticos, como el encriptado
+                    en <code>PasswordHasher</code> y las reglas de negocio en
+                    <code>agenda.service</code>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="info-box h-100">
+                <i class="fa-solid fa-check-double"></i>
+                <div>
+                  <h3>Validación de Seguridad</h3>
+                  <p>
+                    Pruebas exhaustivas ejecutadas para confirmar que el
+                    aislamiento Multi-Tenant funciona correctamente y que los
+                    privilegios por Rol se respetan sin excepciones.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Agradecimiento -->
+      <div class="slide">
+        <div class="content-wrapper cover-center">
+          <h1 class="thanks-title">¡Muchas Gracias!</h1>
+          <p class="subtitle mb-30">
+            Visita nuestro sitio web para conocer más
+          </p>
+          <div class="qr-container">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://fixfactory.vercel.app"
+              alt="QR Code Web"
+              class="qr-image"
+            />
+          </div>
+          <a
+            href="https://fixfactory.vercel.app"
+            target="_blank"
+            class="website-link"
+            >fixfactory.vercel.app</a
+          >
+        </div>
+      </div>
     </div>
 
     <!-- Controles de Navegación -->
     <div class="controls">
-        <button class="btn" onclick="prevSlide()" title="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
-        <div class="dots" id="dots-container"></div>
-        <button class="btn" onclick="nextSlide()" title="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+      <button class="btn" onclick="prevSlide()" title="Anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <div class="dots" id="dots-container"></div>
+      <button class="btn" onclick="nextSlide()" title="Siguiente">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
 
     <script>
-        const slides = document.querySelectorAll('.slide');
-        const dotsContainer = document.getElementById('dots-container');
-        let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+      const dotsContainer = document.getElementById("dots-container");
+      let currentSlide = 0;
 
-        slides.forEach((_, index) => {
-            const dot = document.createElement('div');
-            dot.classList.add('dot');
-            if (index === 0) dot.classList.add('active');
-            dot.onclick = () => goToSlide(index);
-            dotsContainer.appendChild(dot);
+      slides.forEach((_, index) => {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        if (index === 0) dot.classList.add("active");
+        dot.onclick = () => goToSlide(index);
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = document.querySelectorAll(".dot");
+
+      function updateSlides() {
+        slides.forEach((slide, index) => {
+          slide.classList.remove("active");
+          dots[index].classList.remove("active");
+          if (index === currentSlide) {
+            slide.classList.add("active");
+            dots[index].classList.add("active");
+          }
         });
+      }
 
-        const dots = document.querySelectorAll('.dot');
-
-        function updateSlides() {
-            slides.forEach((slide, index) => {
-                slide.classList.remove('active');
-                dots[index].classList.remove('active');
-                if (index === currentSlide) {
-                    slide.classList.add('active');
-                    dots[index].classList.add('active');
-                }
-            });
+      function nextSlide() {
+        if (currentSlide < slides.length - 1) {
+          currentSlide++;
+          updateSlides();
         }
+      }
 
-        function nextSlide() {
-            if (currentSlide < slides.length - 1) {
-                currentSlide++;
-                updateSlides();
-            }
+      function prevSlide() {
+        if (currentSlide > 0) {
+          currentSlide--;
+          updateSlides();
         }
+      }
 
-        function prevSlide() {
-            if (currentSlide > 0) {
-                currentSlide--;
-                updateSlides();
-            }
-        }
+      function goToSlide(index) {
+        currentSlide = index;
+        updateSlides();
+      }
 
-        function goToSlide(index) {
-            currentSlide = index;
-            updateSlides();
-        }
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowRight' || e.key === 'Space') nextSlide();
-            if (e.key === 'ArrowLeft') prevSlide();
-        });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight" || e.key === "Space") nextSlide();
+        if (e.key === "ArrowLeft") prevSlide();
+      });
     </script>
-</body>
-
+  </body>
 </html>
